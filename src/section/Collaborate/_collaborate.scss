@@ -1,0 +1,96 @@
+.collaborate {
+  padding: 4rem 0;
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .heading-container {
+      padding-top: 3rem;
+      .title-container {
+        max-width: 448px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        .pin-board {
+          position: absolute;
+          top: -1rem;
+          right: 0;
+          transform: rotate(10deg);
+          background: hsla(46, 100%, 59%, 1);
+          color: $black;
+          font-weight: $font-700;
+          padding: 0.1rem 0.2rem;
+          line-height: 1.1;
+          border-radius: 0.5rem;
+          font-size: 0.5rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .content-container {
+      display: grid;
+      place-content: center;
+      grid-template-columns: repeat(1, minmax(250px, 450px));
+      .item {
+        padding: 12px 11.39px 22px 12px;
+        .title {
+          font-weight: $font-700;
+          font-size: 1.5rem;
+          color: $blue-gray;
+          margin-bottom: 1.3rem;
+        }
+      }
+    }
+  }
+}
+// ! MEDIA QUERY
+@media screen and (min-width: 450px) {
+  .collaborate {
+    .container {
+      .content-container {
+        grid-template-columns: repeat(1, minmax(250px, 525px));
+      }
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .collaborate {
+      .container {
+        .content-container {
+          grid-template-columns: repeat(2, minmax(250px, 525px));
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      .collaborate {
+        .container {
+          .heading-container {
+            .title-container {
+              .pin-board {
+                top: -1.5rem;
+                right: -15%;
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+        .content-container {
+          grid-template-columns: repeat(2, minmax(250px, 625px));
+        }
+      }
+      @media screen and (min-width: 992px) {
+        .collaborate {
+          .container {
+            .content-container {
+              grid-template-columns: repeat(3, minmax(250px, 360px));
+              gap: 20px;
+              .item {
+                padding: 23px 22.39px 44px 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

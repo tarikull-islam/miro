@@ -1,0 +1,10 @@
+.sub-title {
+  font-weight: $font-400;
+  font-size: 0.9rem;
+  color: $blue-gray;
+}
+@media screen and (min-width: 762px) {
+  .sub-title {
+    font-size: 1.2rem;
+  }
+}

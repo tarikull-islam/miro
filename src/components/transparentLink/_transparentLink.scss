@@ -1,0 +1,21 @@
+.transparent-link {
+  color: $signup-btn-bg;
+  font-weight: $font-400;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  a {
+    border-bottom: 1px solid $signup-btn-bg;
+    font-size: 1rem;
+    color: $signup-btn-bg;
+  }
+}
+@media screen and (min-width: 762px) {
+  .transparent-link {
+    font-size: 1.2rem;
+    a {
+      font-size: 1.2rem;
+    }
+  }
+}

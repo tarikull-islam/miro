@@ -1,0 +1,31 @@
+.signupbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-weight: $font-400;
+  padding: 1rem 1.4rem;
+  background: $signup-btn-bg;
+  border: 1px solid $signup-btn-bg;
+  border-radius: 1000px;
+  font-size: 0.7rem;
+  color: $white;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+  a {
+    color: $white;
+  }
+  &:hover {
+    background: $white;
+    color: $blue-gray;
+    a {
+      color: $blue-gray;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .signupbtn {
+    padding: 1rem 1.4rem;
+    font-size: 0.9rem;
+  }
+}

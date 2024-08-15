@@ -1,0 +1,12 @@
+.section-title {
+  font-size: 2rem;
+  font-weight: $font-700;
+  color: $blue-gray;
+  line-height: 1.4;
+}
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+}

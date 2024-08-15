@@ -1,0 +1,61 @@
+.join-user {
+  margin: 3rem 0;
+  .wrapper {
+    display: grid;
+    place-content: center;
+    background: $blue-gray;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    .title {
+      color: $white;
+      font-size: 1.3rem;
+      margin: 0.8rem 0;
+    }
+    .sub-title {
+      display: grid;
+      place-content: center;
+      font-size: 0.8rem;
+      color: hsla(0, 0%, 100%, 0.6);
+      margin: 0.3rem 0;
+    }
+    .uri-container {
+      display: grid;
+      place-content: center;
+      .outer-uri {
+        padding: 0 1rem;
+        color: hsla(0, 0%, 100%, 0.6);
+        font-size: 0.8rem;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.6);
+      }
+    }
+    .btn-container {
+      display: grid;
+      place-content: center;
+      .btn-wrapper {
+        margin-top: 1.5rem;
+        max-width: 174.23px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .join-user {
+    margin: 7rem 0;
+    .wrapper {
+      padding: 5rem;
+      .title {
+        font-size: 3rem;
+        line-height: 0.7;
+      }
+      .sub-title {
+        font-size: 1.2rem;
+      }
+      .uri-container {
+        .outer-uri {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

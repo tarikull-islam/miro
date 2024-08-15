@@ -1,0 +1,104 @@
+.best-teams {
+  .container {
+    .top-container {
+      display: grid;
+      place-content: center;
+      .heading {
+        text-align: center;
+      }
+      .btn-container {
+        display: grid;
+        place-content: center;
+        margin-top: 1.5rem;
+        .btn-wrapper {
+          .signupbtn {
+            background: transparent;
+            color: $signup-btn-bg;
+            a {
+              color: $signup-btn-bg;
+            }
+            &:hover {
+              background: $signup-btn-bg;
+              color: $white;
+              a {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom-container {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      .card {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin: 0.2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .company {
+          img {
+            box-shadow: 0px 4px 12px 0px hsla(245, 100%, 11%, 0.08);
+          }
+        }
+        .employee {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1rem;
+          .img-container {
+            width: 48px;
+            height: 48px;
+            border-radius: 1000px;
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            .name,
+            .position {
+              font-size: 14px;
+              font-weight: $font-400;
+              color: hsla(245, 100%, 11%, 0.6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .best-teams {
+    .container {
+      .top-container {
+        .btn-container {
+          .btn-wrapper {
+            max-width: 282.69px;
+          }
+        }
+      }
+      .bottom-container {
+        gap: 1.4rem;
+        .card {
+          max-width: 559.95px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .best-teams {
+    .container {
+      .bottom-container {
+        margin-top: 2.5rem;
+        .card {
+          max-width: 359.95px;
+        }
+      }
+    }
+  }
+}
